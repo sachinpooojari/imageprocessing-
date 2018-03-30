@@ -1,0 +1,17 @@
+import cv2
+
+cap=cv2.VideoCapture(0)
+ret = cap.set(3,300)
+ret = cap.set(4,300)
+
+
+
+#fps = cap.get(cv2.CAP_PROP_FPS)
+#cap.set(5,30)
+#cap.set(6,30)
+while True:
+    ret,frame=cap.read()
+    cv2.imshow("hai",frame)
+   
+    cv2.waitKey(10)
+    
